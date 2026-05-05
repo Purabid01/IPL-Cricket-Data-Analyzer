@@ -16,7 +16,7 @@ graph TD;
     F --> G[NumPy Vectorization];
     G --> H[Z-Score Calculation];
     H --> I[(Elite Outliers Target Data)];
-
+```
 
 ## Tech Stack
 Language: Python 3
