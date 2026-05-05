@@ -8,14 +8,11 @@ This project is an end-to-end Data Engineering and Analysis pipeline that ingest
 ## Architecture & Data Flow
 ```mermaid
 graph TD;
-    A[Batters CSV] --> C[Pandas Outer Join];
-    B[Bowlers CSV] --> C;
-    C --> D[Data Imputation & Cleaning];
-    D --> E[Synthesize Timeline];
-    E --> F[Extract Datetime Features];
-    F --> G[NumPy Vectorization];
-    G --> H[Z-Score Calculation];
-    H --> I[(Elite Outliers Target Data)];
+    A[Batting/Bowling CSVs] --> B[Pandas Outer Join];
+    B --> C[Numeric Imputation & Cleaning];
+    C --> D[Datetime Feature Engineering];
+    D --> E[Vectorized NumPy Z-Score Engine];
+    E --> F[Seaborn Statistical Visualization];
 ```
 
 ## Tech Stack
@@ -34,7 +31,7 @@ Environment: Jupyter Notebook / VS Code
 
 2. Ensure you have Python installed, then install the required dependencies:
 ```bash
-pip install pandas numpy jupyter
+pip install pandas numpy jupyter matplotlib seaborn
 ```
 
 3. Open the Jupyter Notebook:
