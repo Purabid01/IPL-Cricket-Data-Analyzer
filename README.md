@@ -33,10 +33,13 @@ Environment: Jupyter Notebook / VS Code
 1. Clone this repository to your local machine.
 
 2. Ensure you have Python installed, then install the required dependencies:
+```bash
 pip install pandas numpy jupyter
+```
 
 3. Open the Jupyter Notebook:
+```bash
 jupyter notebook analysis.ipynb
-
+```
 
 
